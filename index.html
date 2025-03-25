@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <section>
+        <h2>Kenyan cities</h2>
+        <ol type="I">
+            <li>Nairobi</li>
+            <li>Mombasa</li>
+            <li>Kisumu</li>
+            <li>Eldoret</li>
+            <li>Machakos</li>
+        </ol>
+    </section>
+
+   
+    <section>
+        <h2>Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Sample Image from Pexels" width="600">
+    </section>
+
+   
+    <section>
+        <h2>Contact List</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John james</td>
+                    <td>muthaiga, City</td>
+                    <td>0725361478</td>
+                    <td>johnjames@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jane kashery</td>
+                    <td>moi Avenue, City</td>
+                    <td>0778541236</td>
+                    <td>janesherry@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Michael otieno</td>
+                    <td>kisumu, City</td>
+                    <td>0115478974</td>
+                    <td>michaeotieno@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Emily John</td>
+                    <td>ngong Road, City</td>
+                    <td>0114659874</td>
+                    <td>emilyjohn12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Chris Wilson</td>
+                    <td>Karen, City</td>
+                    <td>0799865894</td>
+                    <td>chriswilson458@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    
+    <section>
+        <h2>Registration Form</h2>
+        <form action="register_process.php" method="post">
+           
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+            <br><br>
+
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+           
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            
+            <label>Membership Type:</label><br>
+            <input type="radio" id="basic" name="membership" value="basic" required>
+            <label for="basic">Basic</label>
+            <input type="radio" id="premium" name="membership" value="premium">
+            <label for="premium">Premium</label>
+            <br><br>
+
+         
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests[]" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="design" name="interests[]" value="design">
+            <label for="design">Design</label>
+            <input type="checkbox" id="marketing" name="interests[]" value="marketing">
+            <label for="marketing">Marketing</label>
+            <br><br>
+
+           
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+</body>
+</html>
